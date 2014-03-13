@@ -1,0 +1,93 @@
+﻿.footable > thead > tr > th,.footable > thead > tr > td {
+  position: relative;
+}
+
+.footable {
+  border-spacing: 0;
+  width: 100%;
+  border: solid #ccc 1px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font-family: 'trebuchet MS' , 'Lucida sans' , Arial;
+  font-size: 14px;
+  color: #444;
+}
+
+.footable.breakpoint > tbody > tr > td.expand {
+  background: url('img/plus.png') no-repeat 5px center;
+  padding-left: 40px;
+}
+
+.footable.breakpoint > tbody > tr.footable-detail-show > td.expand {
+  background: url('img/minus.png') no-repeat 5px center;
+}
+
+.footable.breakpoint > tbody > tr.footable-row-detail {
+  background: #eee;
+}
+
+.footable > tbody > tr:hover {
+  background: #4AA02C;
+  color: #FFFFFF;
+}
+
+.footable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
+  cursor: pointer;
+}
+
+.footable > tbody > tr > td, .footable > thead > tr > th {
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 7px;
+  text-align: left;
+}
+
+.footable > thead > tr > th, .footable > thead > tr > td {
+  background-color: #4AA02C;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#4AA02C));
+  background-image: -webkit-linear-gradient(top, #FFFFFF, #4AA02C);
+  background-image: -moz-linear-gradient(top, #FFFFFF, #4AA02C);
+  background-image: -ms-linear-gradient(top, #FFFFFF, #4AA02C);
+  background-image: -o-linear-gradient(top, #FFFFFF, #4AA02C);
+  background-image: linear-gradient(to bottom, #FFFFFF, #4AA02C);
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+  border-top: none;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.footable > thead > tr > th:first-child, .footable > thead > tr > td:first-child {
+  -moz-border-radius: 6px 0 0 0;
+  -webkit-border-radius: 6px 0 0 0;
+  border-radius: 6px 0 0 0;
+}
+
+.footable > thead > tr > th:last-child, .footable > thead > tr > td:last-child {
+  -moz-border-radius: 0 6px 0 0;
+  -webkit-border-radius: 0 6px 0 0;
+  border-radius: 0 6px 0 0;
+}
+
+.footable > thead > tr > th:only-child, .footable > thead > tr > td:only-child {
+  -moz-border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.footable > tbody > tr:last-child > td:first-child {
+  -moz-border-radius: 0 0 0 6px;
+  -webkit-border-radius: 0 0 0 6px;
+  border-radius: 0 0 0 6px;
+}
+
+.footable > tbody > tr:last-child > td:last-child {
+  -moz-border-radius: 0 0 6px 0;
+  -webkit-border-radius: 0 0 6px 0;
+  border-radius: 0 0 6px 0;
+}
+
+.footable > tbody img {
+  vertical-align:middle;
+}

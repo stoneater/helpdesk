@@ -1,0 +1,1 @@
+-Inventory pages, when item is selected, populate workorder history for that item.
